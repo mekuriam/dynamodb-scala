@@ -1,0 +1,11 @@
+version: '2'
+services:
+  db-scala:
+    image: dwmkerr/dynamodb
+    container_name: dynamodb
+    ports:
+      - "8000:8000"
+    environment:
+      AWS_ACCESS_KEY: accessKey
+      AWS_SECRET_ACCESS_KEY: secretKey
+
